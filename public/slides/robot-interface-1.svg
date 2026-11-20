@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" fill="none">
+  <defs>
+    <linearGradient id="bg1" x1="0" y1="0" x2="1200" y2="675" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0b1d36"/>
+      <stop offset="100%" stop-color="#071324"/>
+    </linearGradient>
+    <linearGradient id="tealGlow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#64ffda" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#64ffda" stop-opacity="0.02"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="675" fill="url(#bg1)"/>
+
+  <!-- Top Header Bar -->
+  <rect x="28" y="24" width="1144" height="56" rx="12" fill="#0e2443" stroke="#1e3a5f" stroke-width="1.5"/>
+  <circle cx="58" cy="52" r="8" fill="#64ffda"/>
+  <text x="78" y="58" fill="#f3f4f6" font-family="Nunito, sans-serif" font-weight="700" font-size="18">ALTINAY AMR CONTROL SUITE v2.4</text>
+  <rect x="960" y="36" width="190" height="32" rx="8" fill="#132f54" stroke="#64ffda" stroke-width="1" stroke-opacity="0.5"/>
+  <circle cx="980" cy="52" r="5" fill="#64ffda"/>
+  <text x="995" y="57" fill="#64ffda" font-family="monospace" font-size="13">AMR-04 CONNECTED</text>
+
+  <!-- Left Sidebar Telemetry -->
+  <rect x="28" y="98" width="290" height="549" rx="14" fill="#0e2443" stroke="#1e3a5f" stroke-width="1.5"/>
+  <text x="52" y="136" fill="#9ca3af" font-family="monospace" font-size="13" letter-spacing="1.5">ROBOT TELEMETRY</text>
+
+  <!-- Battery Card -->
+  <rect x="48" y="156" width="250" height="92" rx="10" fill="#0a192f" stroke="#1e3a5f"/>
+  <text x="66" y="184" fill="#9ca3af" font-family="Nunito, sans-serif" font-size="14">Battery Pack (48V LiFePO4)</text>
+  <text x="66" y="220" fill="#64ffda" font-family="monospace" font-weight="700" font-size="28">92.4%</text>
+  <rect x="172" y="202" width="106" height="16" rx="8" fill="#1f2937"/>
+  <rect x="172" y="202" width="96" height="16" rx="8" fill="#64ffda"/>
+
+  <!-- Velocity Card -->
+  <rect x="48" y="264" width="250" height="106" rx="10" fill="#0a192f" stroke="#1e3a5f"/>
+  <text x="66" y="292" fill="#9ca3af" font-family="Nunito, sans-serif" font-size="14">Linear / Angular Velocity</text>
+  <text x="66" y="328" fill="#f3f4f6" font-family="monospace" font-weight="700" font-size="24">1.42 m/s</text>
+  <text x="66" y="352" fill="#64ffda" font-family="monospace" font-size="13">ω: +0.08 rad/s | Mode: AUTO</text>
+
+  <!-- Lidar & Sensors Status -->
+  <rect x="48" y="386" width="250" height="148" rx="10" fill="#0a192f" stroke="#1e3a5f"/>
+  <text x="66" y="414" fill="#9ca3af" font-family="Nunito, sans-serif" font-size="14">Active Sensor Array</text>
+  <circle cx="72" cy="442" r="5" fill="#64ffda"/>
+  <text x="88" y="447" fill="#d1d5db" font-family="monospace" font-size="13">Front 3D LiDAR (30Hz)</text>
+  <circle cx="72" cy="472" r="5" fill="#64ffda"/>
+  <text x="88" y="477" fill="#d1d5db" font-family="monospace" font-size="13">Rear Safety Scanner</text>
+  <circle cx="72" cy="502" r="5" fill="#64ffda"/>
+  <text x="88" y="507" fill="#d1d5db" font-family="monospace" font-size="13">IMU + Wheel Odometry</text>
+
+  <!-- Emergency Stop Ind -->
+  <rect x="48" y="552" width="250" height="72" rx="10" fill="#1e293b" stroke="#64ffda" stroke-opacity="0.35"/>
+  <text x="173" y="585" text-anchor="middle" fill="#e5e7eb" font-family="Nunito, sans-serif" font-weight="700" font-size="15">SAFETY SYSTEM NOMINAL</text>
+  <text x="173" y="607" text-anchor="middle" fill="#64ffda" font-family="monospace" font-size="12">0 OBSTACLES IN CRITICAL ZONE</text>
+
+  <!-- Main Viewport: Live Map & Robot Path -->
+  <rect x="338" y="98" width="540" height="549" rx="14" fill="#0e2443" stroke="#1e3a5f" stroke-width="1.5"/>
+  <text x="364" y="136" fill="#9ca3af" font-family="monospace" font-size="13" letter-spacing="1.5">LIVE SLAM OCCUPANCY GRID</text>
+  <rect x="358" y="154" width="500" height="470" rx="10" fill="#081528" stroke="#1e3a5f"/>
+
+  <!-- Grid lines -->
+  <g stroke="#162c4b" stroke-width="1">
+    <line x1="358" y1="220" x2="858" y2="220"/>
+    <line x1="358" y1="290" x2="858" y2="290"/>
+    <line x1="358" y1="360" x2="858" y2="360"/>
+    <line x1="358" y1="430" x2="858" y2="430"/>
+    <line x1="358" y1="500" x2="858" y2="500"/>
+    <line x1="358" y1="570" x2="858" y2="570"/>
+    <line x1="430" y1="154" x2="430" y2="624"/>
+    <line x1="510" y1="154" x2="510" y2="624"/>
+    <line x1="590" y1="154" x2="590" y2="624"/>
+    <line x1="670" y1="154" x2="670" y2="624"/>
+    <line x1="750" y1="154" x2="750" y2="624"/>
+  </g>
+
+  <!-- Trajectory Path -->
+  <path d="M 420 540 Q 490 420 590 400 T 760 250" stroke="#64ffda" stroke-width="4" stroke-dasharray="8 6" fill="none"/>
+  <circle cx="420" cy="540" r="9" fill="#9ca3af"/>
+  <circle cx="590" cy="400" r="24" fill="url(#tealGlow)" stroke="#64ffda" stroke-width="2"/>
+  <circle cx="590" cy="400" r="8" fill="#64ffda"/>
+  <circle cx="760" cy="250" r="10" fill="none" stroke="#64ffda" stroke-width="3"/>
+  <text x="735" y="230" fill="#64ffda" font-family="monospace" font-size="12">STATION B-02</text>
+
+  <!-- Right Panel: Controls & Task Queue -->
+  <rect x="898" y="98" width="274" height="549" rx="14" fill="#0e2443" stroke="#1e3a5f" stroke-width="1.5"/>
+  <text x="922" y="136" fill="#9ca3af" font-family="monospace" font-size="13" letter-spacing="1.5">OPERATOR JOG &amp; TASKS</text>
+
+  <!-- Virtual Joystick -->
+  <circle cx="1035" cy="260" r="78" fill="#0a192f" stroke="#244773" stroke-width="2"/>
+  <circle cx="1035" cy="260" r="46" fill="#132f54" stroke="#64ffda" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <circle cx="1035" cy="242" r="20" fill="#64ffda"/>
+
+  <!-- Mission Queue -->
+  <rect x="918" y="368" width="234" height="72" rx="8" fill="#0a192f" stroke="#64ffda" stroke-opacity="0.6"/>
+  <text x="934" y="396" fill="#64ffda" font-family="monospace" font-size="12">ACTIVE MISSION #408</text>
+  <text x="934" y="420" fill="#f3f4f6" font-family="Nunito, sans-serif" font-weight="600" font-size="14">Docking at Assembly Line 2</text>
+
+  <rect x="918" y="454" width="234" height="72" rx="8" fill="#0a192f" stroke="#1e3a5f"/>
+  <text x="934" y="482" fill="#9ca3af" font-family="monospace" font-size="12">QUEUED #409</text>
+  <text x="934" y="506" fill="#d1d5db" font-family="Nunito, sans-serif" font-size="14">Payload Transfer -&gt; Bay 4</text>
+
+  <rect x="918" y="544" width="234" height="80" rx="8" fill="#0a192f" stroke="#1e3a5f"/>
+  <text x="934" y="572" fill="#9ca3af" font-family="monospace" font-size="12">SYSTEM UPLINK</text>
+  <text x="934" y="598" fill="#64ffda" font-family="monospace" font-size="16">ROS2 Bridge: 4.2 ms</text>
+</svg>
+

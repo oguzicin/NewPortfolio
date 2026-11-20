@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" fill="none">
+  <rect width="1200" height="675" fill="#09182c"/>
+  <rect x="28" y="24" width="1144" height="56" rx="12" fill="#0e2443" stroke="#1e3a5f" stroke-width="1.5"/>
+  <circle cx="58" cy="52" r="8" fill="#64ffda"/>
+  <text x="78" y="58" fill="#f3f4f6" font-family="Nunito, sans-serif" font-weight="700" font-size="18">REACT ROBOT INTERFACE — KINEMATICS &amp; DIAGNOSTICS</text>
+  <text x="975" y="57" fill="#64ffda" font-family="monospace" font-size="13">MOTOR DRIVERS: ONLINE</text>
+
+  <!-- 3 Diagnostic Columns -->
+  <rect x="28" y="98" width="368" height="549" rx="14" fill="#0e2443" stroke="#1e3a5f" stroke-width="1.5"/>
+  <text x="56" y="140" fill="#f3f4f6" font-family="Nunito, sans-serif" font-weight="700" font-size="18">Drive Motor Telemetry</text>
+  <rect x="52" y="166" width="320" height="130" rx="10" fill="#0a192f" stroke="#1e3a5f"/>
+  <text x="74" y="200" fill="#9ca3af" font-family="monospace" font-size="13">LEFT TRACTION SERVO</text>
+  <text x="74" y="240" fill="#64ffda" font-family="monospace" font-weight="700" font-size="26">1,420 RPM</text>
+  <text x="74" y="272" fill="#d1d5db" font-family="monospace" font-size="13">Current: 6.8A  |  Temp: 41.2°C</text>
+
+  <rect x="52" y="314" width="320" height="130" rx="10" fill="#0a192f" stroke="#1e3a5f"/>
+  <text x="74" y="348" fill="#9ca3af" font-family="monospace" font-size="13">RIGHT TRACTION SERVO</text>
+  <text x="74" y="388" fill="#64ffda" font-family="monospace" font-weight="700" font-size="26">1,418 RPM</text>
+  <text x="74" y="420" fill="#d1d5db" font-family="monospace" font-size="13">Current: 6.7A  |  Temp: 40.9°C</text>
+
+  <rect x="52" y="462" width="320" height="156" rx="10" fill="#0a192f" stroke="#1e3a5f"/>
+  <text x="74" y="496" fill="#9ca3af" font-family="monospace" font-size="13">LIFT ACTUATOR STAGE</text>
+  <text x="74" y="534" fill="#f3f4f6" font-family="monospace" font-weight="700" font-size="22">RAISED (120 mm)</text>
+  <text x="74" y="568" fill="#64ffda" font-family="monospace" font-size="13">Payload Weight: 285 kg</text>
+
+  <!-- Center Real-Time Graph -->
+  <rect x="416" y="98" width="756" height="549" rx="14" fill="#0e2443" stroke="#1e3a5f" stroke-width="1.5"/>
+  <text x="446" y="140" fill="#f3f4f6" font-family="Nunito, sans-serif" font-weight="700" font-size="18">PID Velocity Tracking &amp; Localization Confidence</text>
+  <rect x="444" y="166" width="700" height="452" rx="10" fill="#071324" stroke="#1e3a5f"/>
+
+  <!-- Waveform chart -->
+  <path d="M 470 460 C 540 460, 560 280, 630 280 C 700 280, 730 310, 810 260 C 890 210, 960 240, 1110 235" stroke="#64ffda" stroke-width="3.5" fill="none"/>
+  <path d="M 470 465 C 540 465, 565 290, 635 286 C 705 282, 735 315, 815 266 C 895 216, 965 244, 1110 238" stroke="#9ca3af" stroke-width="2" stroke-dasharray="6 6" fill="none"/>
+  <text x="475" y="205" fill="#64ffda" font-family="monospace" font-size="13">— Measured Velocity (m/s)</text>
+  <text x="715" y="205" fill="#9ca3af" font-family="monospace" font-size="13">-- Target Setpoint (m/s)</text>
+</svg>
+
